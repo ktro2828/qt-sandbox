@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}"
+      },
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/install/**",
+        "${workspaceFolder}/src/**",
+        "/usr/include/**",
+        "/usr/local/include/**"
+      ],
+      "intelliSenseMode": "linux-gcc-x64",
+      "compilerPath": "/usr/lib/llvm-14/bin/clang",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "name": "watch-app"
+    }
+  ],
+  "version": 4
+}
