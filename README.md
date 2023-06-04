@@ -6,12 +6,20 @@ An app of display watch
 ### Requirements
 
 - Qt5
-- OpenCV4
 
 ```shell
-$ cmake -B build -DWATCH_TYPE=cv # (or qt)
-$ cmake --build build
-$ ./build/src/cv_watch # or (./build/src/qt_watch)
+# check your Qt version
+$ qmake --version
+QMake version 3.1
+Using Qt version 5.15.3 in /usr/lib/x86_64-linux-gnu
 ```
 
-Exit with `Esc` key for cv watch, or press `Exit` for qt watch.
+```shell
+$ cmake -B build
+$ cmake --build build
+```
+
+## Reference
+
+- [Qt5.15 > QtExamples Ant Tutorials](https://doc.qt.io/qt-5/qtexamplesandtutorials.html)
+- [Qt5 tutorial](https://zetcode.com/gui/qt5/)

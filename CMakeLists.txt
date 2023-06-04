@@ -29,5 +29,20 @@ target_link_libraries(file PRIVATE Qt5::Core)
 add_executable(dir src/dir.cpp)
 target_link_libraries(dir PRIVATE Qt5::Core)
 
-# add_executable(qt_watch src/qt_watch.cpp) target_link_libraries(qt_watch
-# PRIVATE Qt5::Core Qt5::Widgets)
+# cursor
+add_executable(cursor src/cursor.cpp)
+target_link_libraries(cursor PRIVATE Qt5::Core Qt5::Widgets)
+
+# button
+add_executable(button src/button.cpp)
+set_target_properties(button PROPERTIES AUTOMOC TRUE)
+target_link_libraries(button PRIVATE Qt5::Core Qt5::Widgets)
+
+# menu
+add_executable(menu src/menu.cpp)
+set_target_properties(menu PROPERTIES AUTOMOC TRUE)
+target_link_libraries(menu PRIVATE Qt5::Core Qt5::Widgets)
+
+# timer
+add_executable(timer src/timer.cpp)
+target_link_libraries(timer PRIVATE Qt5::Core Qt5::Widgets)
