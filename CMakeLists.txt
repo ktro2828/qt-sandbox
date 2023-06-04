@@ -25,7 +25,7 @@ target_link_libraries(container PRIVATE Qt5::Core)
 add_executable(file src/file.cpp)
 target_link_libraries(file PRIVATE Qt5::Core)
 
-# fir
+# dir
 add_executable(dir src/dir.cpp)
 target_link_libraries(dir PRIVATE Qt5::Core)
 
