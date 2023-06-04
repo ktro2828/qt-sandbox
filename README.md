@@ -15,7 +15,7 @@ Using Qt version 5.15.3 in /usr/lib/x86_64-linux-gnu
 ```
 
 ```shell
-$ cmake -B build
+$ cd qt_sandbox && cmake -B build
 $ cmake --build build
 ```
 

@@ -8,8 +8,11 @@
         "${workspaceFolder}/**",
         "${workspaceFolder}/install/**",
         "${workspaceFolder}/src/**",
+        "${workspaceFolder}/ros2_qt/include/**",
+        "${workspaceFolder}/ros2_qt/install/**",
         "/usr/include/**",
         "/usr/local/include/**",
+        "/usr/include/opencv4/**",
         "/opt/ros/humble/include/**"
       ],
       "intelliSenseMode": "linux-gcc-x64",
