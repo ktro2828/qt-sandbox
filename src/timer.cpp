@@ -1,5 +1,6 @@
 #include <QApplication>
 #include <QDateTime>
+#include <QFont>
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QTime>
@@ -11,9 +12,9 @@ public:
   Timer(QWidget * parent = nullptr) : QWidget(parent)
   {
     QHBoxLayout * hbox = new QHBoxLayout(this);
-    hbox->setSpacing(5);
 
     label = new QLabel("", this);
+    label->setFont(QFont("Arial", 60, QFont::Bold));
     hbox->addWidget(label, 0, Qt::AlignHCenter | Qt::AlignVCenter);
 
     QString msec = QTime::currentTime().toString("zzz");
