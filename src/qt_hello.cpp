@@ -1,8 +1,13 @@
+#include <QtCore>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QtWidgets>
 
+#include <iostream>
+
 int main(int argc, char ** argv)
 {
+  std::cout << "Qt version: " << qVersion() << std::endl;
+
   // main window
   QApplication app(argc, argv);
   QWidget window;

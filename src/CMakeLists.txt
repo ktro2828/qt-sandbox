@@ -1,11 +1,1 @@
-if(${WATCH_TYPE} MATCHES "cv")
-  add_executable(cv_watch cv_watch.cpp)
-  target_include_directories(cv_watch PRIVATE ${OpenCV_INCLUDE_DIRS})
-  target_link_libraries(cv_watch PRIVATE ${OpenCV_LIBS})
-elseif(${WATCH_TYPE} MATCHES "qt")
-  add_executable(qt_watch qt_watch.cpp)
-  target_link_libraries(qt_watch PRIVATE Qt5::Core Qt5::Widgets)
-else()
-  message(FATAL_ERROR "Unexpected WATCH_TYPE: `" ${WATCH_TYPE}
-                      "`, use (cv, qt)")
-endif()
+
