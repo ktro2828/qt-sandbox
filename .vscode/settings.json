@@ -84,7 +84,8 @@
     "__nullptr": "cpp",
     "__functional_base": "cpp",
     "locale": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "qapplication": "cpp"
   },
   "ros.distro": "humble",
   "python.autoComplete.extraPaths": [

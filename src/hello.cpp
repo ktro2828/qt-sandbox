@@ -1,12 +1,11 @@
+#include <QTextStream>
 #include <QtCore>
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QtWidgets>
-
-#include <iostream>
+#include <QtWidgets>
 
 int main(int argc, char ** argv)
 {
-  std::cout << "Qt version: " << qVersion() << std::endl;
+  QTextStream out(stdout);
+  out << "Qt version: " << qVersion() << Qt::endl;
 
   // main window
   QApplication app(argc, argv);

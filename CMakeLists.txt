@@ -9,8 +9,17 @@ find_package(
   COMPONENTS Core Widgets
   REQUIRED)
 
-add_executable(qt_hello src/qt_hello.cpp)
-target_link_libraries(qt_hello PRIVATE Qt5::Core Qt5::Widgets)
+# hello
+add_executable(hello src/hello.cpp)
+target_link_libraries(hello PRIVATE Qt5::Core Qt5::Widgets)
+
+# date
+add_executable(date src/date.cpp)
+target_link_libraries(date PRIVATE Qt5::Core)
+
+# container
+add_executable(container src/container.cpp)
+target_link_libraries(container PRIVATE Qt5::Core)
 
 # add_executable(qt_watch src/qt_watch.cpp) target_link_libraries(qt_watch
 # PRIVATE Qt5::Core Qt5::Widgets)
